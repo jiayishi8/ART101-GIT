@@ -1,0 +1,18 @@
+BODY { background: #f3d0e7; padding: 50px;}
+H1, H2, H3 {color: #764919; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 
+    'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+P, li {font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+#mypic {width: 200px;}
+
+#introduction p { font-style: italic;}
+#introduction p { font-size: 115%;}
+#introduction p {color:rgb(128, 105, 76);}
+
+li {font-style: italic; color:rgb(128, 105, 76);}
+
+#navigation {font-style: italic}
+
+.navigation {
+display: flex;
+gap: 20px;
+}

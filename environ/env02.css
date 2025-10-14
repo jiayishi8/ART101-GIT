@@ -1,0 +1,27 @@
+BODY { background-image: url("paleking.jpg");  
+    background-position: center center; 
+  background-size: cover; 
+  background-attachment: fixed; }
+
+ p {
+  font-family: "Fira Sans", serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: white;
+  text-align: center;
+}
+
+#grub {width: 200px; position: relative; top: 500px;  left: 600px; 
+    animation: slideIn 4s ease-out forwards;}
+
+  
+
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100vw); 
+  }
+  to {
+    transform: translateX(0); 
+  }
+}
