@@ -1,27 +1,67 @@
-BODY { background-image: url("paleking.jpg");  
-    background-position: center center; 
-  background-size: cover; 
-  background-attachment: fixed; }
-
- p {
-  font-family: "Fira Sans", serif;
-  font-size: 1.2rem;
-  font-style: italic;
+body {
+  background-image: url("paleking.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  height: 100vh;
   color: white;
+  font-family: "Fira Sans", serif;
   text-align: center;
+  overflow: hidden;
 }
 
-#grub {width: 200px; position: relative; top: 500px;  left: 600px; 
-    animation: slideIn 4s ease-out forwards;}
 
-  
+.background {
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+  height: 100vh;            
+  width: 100%;
+  position: fixed;        
+  top: 0;
+  left: 0;
+  pointer-events: none;     
+}
+
+#knight {
+  position: fixed;              
+  top: 55%;                     
+  left: 48%;                    
+  transform: translate(-50%, -50%); 
+  width: 300px;                 }
 
 
-@keyframes slideIn {
-  from {
-    transform: translateX(100vw); 
-  }
-  to {
-    transform: translateX(0); 
-  }
+p {
+  font-size: 1.2rem;
+  font-style: italic;
+  z-index: 1;               
+  position: relative;
+}
+
+#grub {
+  width: 150px;
+  position: relative;
+  top: 500px;
+  left: 400px;
+  animation: slideIn 4s ease-out forwards;
+}
+
+
+
+.lose {
+  position: absolute;
+  top: 50%;            /* halfway down the screen */
+  left: 5%;            /* a little in from the left edge */
+  transform: translateY(-50%); /* perfectly center vertically */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* align list text to the left */
+  gap: 5px;                /* small spacing between lines */
+  font-family: "Fira Sans", serif;
+  font-style: italic;
+  color: white;
+  z-index: 9999;
+  padding: 0;
+  margin: 0;
 }

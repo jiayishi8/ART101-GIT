@@ -1,0 +1,44 @@
+
+body {
+  background-image: url("paleking.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  height: 100vh;
+
+  display: flex;               /* turn the body into a flex container */
+  justify-content: center;     /* center horizontally */
+  align-items: center;         /* center vertically */
+}
+p {
+  font-family: "Fira Sans", serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: white;
+  text-align: center;
+}
+
+#knight {
+  position: fixed;              
+  top: 55%;                     
+  left: 45%;                    
+  transform: translate(-50%, -50%); 
+  width: 200px;                 }
+
+#grub {
+  width: 150px;
+  position: relative;
+  top: 500px;
+  left: 600px;
+  animation: slideIn 4s ease-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
