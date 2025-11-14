@@ -43,3 +43,19 @@ else {
 $("#good-button").click(function () {
     giveGeo(3000);
 });
+
+$("#knight").hover(
+  function () {
+    $("#grub").animate(
+      { left: "+=100px", top: "-=50px", width: "200px" },
+      1000 // 1 second
+    );
+  },
+  function () {
+    // When mouse leaves the knight, grub returns to its original spot and size
+    $("#grub").animate(
+      { left: "400px", top: "500px", width: "150px" },
+      1000
+    );
+  }
+);

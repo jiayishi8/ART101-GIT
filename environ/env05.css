@@ -1,0 +1,107 @@
+body {
+  background-image: url("paleking.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  height: 100vh;
+  color: white;
+  font-family: "Fira Sans", serif;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+.background {
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+  height: 100vh;            
+  width: 100%;
+  position: fixed;        
+  top: 0;
+  left: 0;
+  pointer-events: none;     
+}
+
+#knight {
+  position: fixed;              
+  top: 55%;                     
+  left: 48%;                    
+  transform: translate(-50%, -50%); 
+  width: 300px;                 }
+
+
+p {
+  font-size: 1.2rem;
+  font-style: italic;
+  z-index: 1;               
+  position: relative;
+}
+
+#grub {
+  width: 150px;
+  position: relative;
+  top: 500px;
+  left: 400px;
+  animation: slideIn 4s ease-out forwards;
+}
+
+
+
+.lose {
+  position: absolute;
+  top: 50%;            
+  left: 5%;            
+  transform: translateY(-50%); 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  gap: 5px;                
+  font-family: "Fira Sans", serif;
+  font-style: italic;
+  color: white;
+  z-index: 9999;
+  padding: 0;
+  margin: 0;
+}
+
+#output {
+  bottom: 60%;
+  left: 50%;
+  color: white;
+  font-size: 1.1rem;
+  font-family: "Fira Sans", serif;
+  text-shadow: 2px 2px 4px black;
+}
+
+#good-button {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px;
+  font-family: "Fira Sans", serif;
+  font-style: italic;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  position: relative;
+  top: 20px;
+}
+
+#good-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#output {
+  display: block;
+  margin: 30px auto 0;   /* centers it horizontally and adds top space */
+  width: fit-content; 
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;       /* centers text horizontally */
+  font-family: "Fira Sans", serif;
+  font-style: italic;
+  text-shadow: 2px 2px 4px black;
+}
