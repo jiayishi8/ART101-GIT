@@ -1,0 +1,43 @@
+#output {
+  bottom: 60%;
+  left: 50%;
+  color: white;
+  font-size: 1.1rem;
+  font-family: "Fira Sans", serif;
+  text-shadow: 2px 2px 4px black;
+}
+
+#good-button {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px;
+  font-family: "Fira Sans", serif;
+  font-style: italic;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  position: relative;
+  top: 20px;
+}
+
+#good-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#output {
+  display: block;
+  margin: 30px auto 0;   /* centers it horizontally and adds top space */
+  width: fit-content; 
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;       /* centers text horizontally */
+  font-family: "Fira Sans", serif;
+  font-style: italic;
+  text-shadow: 2px 2px 4px black;
+}
+
+#grub {
+    position: absolute;
+}
